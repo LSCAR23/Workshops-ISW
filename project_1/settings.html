@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="settings.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <img width="200" height="auto" src="ticorides.png" alt="Tico Rides">
+    <header id="main_head">
+        <a href="login.html"><img id="back" src="back.png" alt="back"></a>
+    </header>
+    <img id="tico_r" src="ticorides.png" alt="Tico Rides">
     <div>
         <h1>Settings</h1>
     </div>
     <div>
         <h5>Welcome barrollo</h5>
     </div>
+    <div id="but_content">
+        <a href="dashboard.html"><button class="tabs">Dashboard</button></a>
+        <a href="edit_ride.html"><button class="tabs">Rides</button></a>
+        <button id="but_selected">Settings</button>
+    </div>
     <div>
-        <div>
-            <h3>Full name</h3>
-            <input type="text">
-        </div>
-        <div>
-            <h3>Speed average</h3>
-            <input type="number">
-        </div>
-        <div>
-            <h3>About me</h3>
-            <input type="text">
-        </div>
+        <form action="">
+            <div>
+                <h3>Full name</h3>
+                <input type="text">
+            </div>
+            <div>
+                <h3>Speed average</h3>
+                <input type="number">
+            </div>
+            <div>
+                <h3>About me</h3>
+                <textarea></textarea>
+            </div>
+        </form>
         <footer>
-            <a href="dashboard.html">Cancel</a>
+            <a id="cancel" href="dashboard.html">Cancel</a>
             <button>Save</button>
         </footer>
     </div>

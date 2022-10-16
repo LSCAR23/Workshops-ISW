@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="dashboard.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <img width="200" height="auto" src="ticorides.png" alt="Tico Rides">
+    <header id="main_head">
+        <a href="login.html"><img id="back" src="back.png" alt="back"></a>
+    </header>
+    <img id="tico_r" src="ticorides.png" alt="Tico Rides">
     <div>
         <h1>Dashboard</h1>
         <h2>
@@ -17,11 +21,16 @@
     <div>
         <h5>Welcome barrollo</h5>
     </div>
-    <div>
-        <header>
+    <div id="but_content">
+        <button id="but_selected">Dashboard</button>
+        <a href="edit_ride.html"><button class="tabs">Rides</button></a>
+        <a href="settings.html"><button class="tabs">Settings</button></a>
+    </div>
+    <div id="table_continer">
+        <header id="head_table">
             <h3>Your current list of rides</h3>
         </header>
-        <button>+</button>
+        <a href="new_ride.html"><button class="plus">+</button></a>
         <table>
             <thead>
                 <tr>
@@ -50,7 +59,7 @@
                 <td>Edit-Delete</td>
               </tr>
           </table> 
-          <button>+</button>
+          <a href="new_ride.html"><button class="plus">+</button></a>
           <footer>
             
         </footer>

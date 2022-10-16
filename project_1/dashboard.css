@@ -1,0 +1,90 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+#main_head{
+    display: flex;
+    background-color: #246355;
+    align-items: center;
+    padding: 10px;
+}
+#back{
+    width:50px;
+    height:auto;
+}
+#head_table{
+    display: flex;
+    justify-content: center;
+    background-color: #246355;
+}
+#tico_r{
+    width:200px ;
+    height:auto;
+    text-align: center;
+}
+#table_continer{
+    width: 600px;
+    text-align: left;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+table{
+    width: 100%;
+}
+
+th,td{
+    padding: 10px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px;
+    border-color: #0f362d;
+    color: #fff;
+}
+tr:nth-child(even){
+    background-color: #ddd;
+}
+button:hover,tr:hover td{
+    background-color: #369681;
+    color: #fff;
+}
+h5{
+    font-size: 25px;
+    color: #ff8c00;
+}
+.plus{
+    margin-left: 95%;
+    background-color: #0f362d;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+}
+
+#but_content{
+    display: flex;
+    justify-content: center;
+    padding-bottom:10px;
+}
+#but_selected{
+    background-color: #369681;
+    color: #fff;
+    border: none;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.tabs{
+    background-color: #0f362d;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    height: 30px;
+}

@@ -1,0 +1,93 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+#main_head{
+    display: flex;
+    background-color: #246355;
+    align-items: center;
+    padding: 10px;
+}
+#tico_r{
+    width:200px ;
+    height:auto;
+    text-align: center;
+}
+#back{
+    width:50px;
+    height:auto;
+}
+input{
+    height: 1rem;
+    font-size: 15px;
+}
+#but_content{
+    display: flex;
+    justify-content: center;
+    padding-bottom:10px;
+}
+#but_selected{
+    background-color: #369681;
+    color: #fff;
+    border: none;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.tabs{
+    background-color: #0f362d;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    height: 30px;
+}
+h5{
+    font-size: 25px;
+    color: #ff8c00;
+}
+button:hover{
+    background-color: #369681;
+    color: #fff;
+}
+.child_inf{
+    display: flex;
+    justify-content: center;
+}
+.child_child{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#in_des{
+    width: 420px;
+    height: 100px;
+    font-size: 15px;
+}
+
+.day{
+    display: block;
+}
+
+#secc_time{
+    display: flex;
+    justify-content:center;
+}
+#time{
+    margin-right: 100px;
+}
+#save{
+    margin-top: 20px;
+    background-color: #0f362d;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    height: 30px; 
+    width: 70px;
+    margin-bottom: 30px;
+    margin-left: 250px;
+}
+
+#cancel{
+    font-size: 20px;
+}
