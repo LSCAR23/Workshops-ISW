@@ -1,0 +1,48 @@
+#main_div{
+    background-color: yellow;
+    color: black;
+}
+#sel_div{
+    background-color: orange;
+
+}
+#big_div,#second_div{
+    background-color: #fff;
+}
+#Places{
+    display: block;
+}
+#list{
+    display: none;
+}
+div{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+}
+footer{
+    background-color: blueviolet;
+    margin-top: 10px;
+}
+@media only screen and (min-width:600px){
+    #big_div{
+        display: flex;
+        justify-content: center;
+    }
+    #sel_div{
+        height: 100px;
+        margin-right: 10px;
+    }
+    #Places{
+        display: none;
+    }
+    #list{
+        display: block;
+    }
+    #second_div{
+        margin-left: 10px;
+    }
+    .child_second{
+        margin-top: 0px;
+    }
+}
