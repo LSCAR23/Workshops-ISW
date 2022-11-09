@@ -1,0 +1,14 @@
+form{
+    display: flex;
+    flex-direction: column;
+}
+.dat{
+    margin: 10px 10px 10px 10px;
+    width: 25vw;
+    height: 25px;
+}
+#enviar{
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+}
