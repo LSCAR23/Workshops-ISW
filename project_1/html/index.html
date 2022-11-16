@@ -19,14 +19,14 @@
     <div id="dir_container">
         <div class="child_dir">
             <h3>From</h3>
-            <input class="in_tex" type="text">
+            <input id="from" class="in_tex" type="text">
         </div>
         <div class="child_dir">
             <h3>To</h3>
-            <input class="in_tex" type="text">
+            <input id="to" class="in_tex" type="text">
         </div>
         <div id="div_but">
-            <button >Find my ride!</button>
+            <button id="but_find">Find my ride!</button>
         </div>
     </div>
     <div id="table_continer">
@@ -40,24 +40,26 @@
                     <th> </th>
                 </tr>
             </thead>
-            <tr>
-            <td>Barroyo</td>
-            <td>Barrio los angeles</td>
-            <td>Ciudad Quesada</td>
-            <td>View</td>
-            </tr>
-            <tr>
-            <td>Barroyo</td>
-            <td>Ciudad Quesada</td>
-            <td>Los angeles</td>
-            <td>View</td>
-            </tr>
-            <tr>
-                <td>Yluna</td>
-                <td>Ciudad Quesada</td>
-                <td>San Pedro</td>
-                <td>View</td>
-            </tr>
+            <tbody id="table_rides">
+                <tr>
+                    <td>Barroyo</td>
+                    <td>Barrio los angeles</td>
+                    <td>Ciudad Quesada</td>
+                    <td>View</td>
+                    </tr>
+                    <tr>
+                    <td>Barroyo</td>
+                    <td>Ciudad Quesada</td>
+                    <td>Los angeles</td>
+                    <td>View</td>
+                    </tr>
+                    <tr>
+                        <td>Yluna</td>
+                        <td>Ciudad Quesada</td>
+                        <td>San Pedro</td>
+                        <td>View</td>
+                    </tr>
+            </tbody>
         </table> 
     </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
