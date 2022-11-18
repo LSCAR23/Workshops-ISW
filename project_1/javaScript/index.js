@@ -18,9 +18,13 @@ $("#but_find").click(()=>{
     $("#table_rides").append(rows);
 });
 
+
 function add_localstorage(){
-    localStorage.setItem("usuarios",'{{}}');
-    var aux_1=[{user:"703030937",from:"Limon",to:"San Jose"},{user:"703030938",from:"Limo",to:"San Jos"}];
-    localStorage.setItem("rides",JSON.stringify(aux_1));
+    if(localStorage.length==0){
+        var aux_2=[];
+        localStorage.setItem("usuarios",JSON.stringify(aux_2));
+        var aux_1=[];
+        localStorage.setItem("rides",JSON.stringify(aux_1));
+    }
 }
 add_localstorage();

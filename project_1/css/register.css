@@ -27,7 +27,7 @@ footer{
     margin-bottom: 20px;
     font-size: 20px;
 }
-button{
+button,#but_reg{
     margin-top: 20px;
     background-color: #0f362d;
     font-weight: bold;
@@ -36,7 +36,7 @@ button{
     border: none;
     height: 30px; 
 }
-button:hover{
+button:hover,#but_reg:hover{
     background-color: #369681;
     color: #fff;
 }

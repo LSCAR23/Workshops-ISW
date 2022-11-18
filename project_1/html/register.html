@@ -17,33 +17,35 @@
         <form action="">
             <div>
                 <h3>First name</h3>
-                <input type="text">
+                <input id="first_name" type="text" required>
             </div>
             <div>
                 <h3>Last name</h3>
-                <input type="text">
+                <input id="last_name" type="text" required>
             </div>
             <div>
                 <h3>Phone</h3>
-                <input type="tel">
+                <input id="telefono" type="tel" required>
             </div>
             <div>
                 <h3>Username</h3>
-                <input type="text">
+                <input id="nickname" type="text" required>
             </div>
             <div>
                 <h3>Password</h3>
-                <input type="password">
+                <input id="password" type="password" required>
             </div>
             <div>
                 <h3>Repeat password</h3>
-                <input type="password">
+                <input id="confirm_password" type="password" required>
             </div>
         </form>
-        <button>Register</button>
+        <input id="but_reg" type="submit" value="Register"></input>  
         <footer>Already an user?
             <a href="/project_1/html/login.html">Login here</a>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/project_1/javaScript/register.js"></script>
 </body>
 </html>
