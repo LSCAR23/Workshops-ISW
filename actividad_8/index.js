@@ -7,3 +7,5 @@ $("#enviar").click(()=>{
         localStorage.setItem("usuario_"+String(ind),JSON.stringify(usuario));
     }
 });
+
+
