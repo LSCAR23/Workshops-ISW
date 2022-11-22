@@ -23,7 +23,7 @@ function add_localstorage(){
     if(localStorage.length==0){
         var aux_2=[];
         localStorage.setItem("usuarios",JSON.stringify(aux_2));
-        var aux_1=[{"user":"703030937","from":"Limon","to":"San Carlos"},{"user":"703030937","from":"Limon","to":"Alajuela"},{"user":"703030937","from":"Guanacaste","to":"San Carlos"},{"user":"703030937","from":"Guanacaste","to":"Limon"}];
+        var aux_1=[{"user":"10scar","name":"brete","from":"Limon","to":"San Carlos"},{"user":"10scar","name":"bret","from":"Limon","to":"Alajuela"},{"user":"10scar","name":"bre","from":"Guanacaste","to":"San Carlos"},{"user":"10scar","name":"br","from":"Guanacaste","to":"Limon"}];
         localStorage.setItem("rides",JSON.stringify(aux_1));
     }
 }
@@ -38,7 +38,6 @@ function fill_select(key,select,val){
         const current_ride=rides[i];
         aux_1.push(current_ride[key]);
     }
-    debugger;
     let aux_2={};
     for(var i =0;i<aux_1.length;i++){
         if(!(aux_1[i] in aux_2) && val){

@@ -10,7 +10,7 @@ $("#but_log").click(()=>{
         }
     }
     if(val){
-        $("#but_log").attr("href","/project_1/html/dashboard.html");
+        $("#but_log").attr("href","/project_1/html/dashboard.html?userName="+user_name);
     }else{
         alert("Datos incorrectos.");
     }
