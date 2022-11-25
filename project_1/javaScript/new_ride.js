@@ -6,7 +6,8 @@ function substract_name(){
 }
 
 $("#welcome").html("<h5>Welcome "+substract_name()+"</h5");
-
+$("#cancel").attr("href","/project_1/html/dashboard.html?userName="+substract_name());
+$("#back_b").attr("href","/project_1/html/dashboard.html?userName="+substract_name());
 $("#save").click(()=>{
     let name=$("#name").val();
     let start=$("#from").val();
@@ -29,7 +30,6 @@ $("#save").click(()=>{
                 "arrival":arrival,
                 "days":fill_days()
             }
-            debugger;
             const aux_db=localStorage.getItem("rides");
             const aux_db2=JSON.parse(aux_db);
             let val=false;
@@ -38,7 +38,6 @@ $("#save").click(()=>{
                     val=true;
                 } 
             }
-            debugger;
             if(val){
                 alert("El ride "+name+" ya existe.")
             }else{
