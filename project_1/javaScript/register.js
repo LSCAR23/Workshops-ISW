@@ -29,7 +29,7 @@ $("#but_reg").click(()=>{
                     const user={
                         "nombre":nom,
                         "apellido":ape,
-                        "telefono":tel,
+                        "telefono":try_cast.toString(),
                         "nombreUsu":nom_usu,
                         "contra":contra
                     };
