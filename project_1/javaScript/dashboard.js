@@ -27,7 +27,7 @@ function load_table(name){
     $("#main_table").append(rows);
 }
 function set_links(name){
-    $("#see_b").attr("href","/project_1/html/see_ride.html?userName="+name);
+    $("#see_b").attr("href","/project_1/html/new_ride.html?userName="+name);
     $("#set_b").attr("href","/project_1/html/settings.html?userName="+name);
     $(".plus_b").attr("href","/project_1/html/new_ride.html?userName="+name);
 }

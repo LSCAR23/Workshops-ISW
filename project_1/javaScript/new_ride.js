@@ -8,6 +8,8 @@ function substract_name(){
 $("#welcome").html("<h5>Welcome "+substract_name()+"</h5");
 $("#cancel").attr("href","/project_1/html/dashboard.html?userName="+substract_name());
 $("#back_b").attr("href","/project_1/html/dashboard.html?userName="+substract_name());
+$("#but_dash").attr("href","/project_1/html/dashboard.html?userName="+substract_name());
+$("#but_set").attr("href","/project_1/html/settings.html?userName="+substract_name());
 $("#save").click(()=>{
     let name=$("#name").val();
     let start=$("#from").val();

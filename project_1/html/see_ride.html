@@ -9,14 +9,14 @@
 </head>
 <body>
     <header id="main_head">
-        <a href="/project_1/html/login.html"><img id="back" src="/project_1/imagenes/back.png" alt="back"></a>
+        <a href="/project_1/html/login.html" id="back_b"><img id="back" src="/project_1/imagenes/back.png" alt="back"></a>
     </header>
     <img id="tico_r" src="/project_1/imagenes/ticorides.png" alt="Tico Rides">
     <div>
         <h1>See ride</h1>
     </div>
     <div>
-        <h5>Welcome barrollo</h5>
+        <h5 id="welcome">Welcome barrollo</h5>
     </div>
     <div id="but_content">
         <a href="/project_1/html/dashboard.html"><button class="tabs">Dashboard</button></a>
@@ -28,51 +28,52 @@
             <section>
                 <div>
                     <h3>Ride name</h3>
-                    <input type="text">
+                    <input id="name" type="text" readonly>
                 </div>
                 <div class="child_inf">
                     <div class="child_child">
                         <h3>Start From</h3>
-                        <input type="text">
+                        <input id="from" type="text" readonly>
                     </div>
                     <div class="child_child">
                         <h3>End</h3>
-                        <input type="text">
+                        <input id="end" type="text" readonly>
                     </div>
                 </div>
                 <div>
                     <h3>Description</h3>
-                    <textarea id="in_des" ></textarea>
+                    <textarea id="in_des" readonly></textarea>
                 </div>
             </section>
             <section id="secc_time">
                 <div id="time">
                     <div>
                         <h3>Departure</h3>
-                        <input type="time">
+                        <input id="departure" type="time" readonly>
                     </div>
                     <div>
                         <h3>Estimated Arrival</h3>
-                        <input type="time">
+                        <input id="arrival" type="time" readonly>
                     </div>
                 </div>
                 <div id="days">
                     <h3>Select days</h3>
-                    <input class="day" type="checkbox" id="cbox_Mon"><label for="cbox_Mon">Monday</label>
-                    <input class="day" type="checkbox" id="cbox_tues"><label for="cbox_tues">Tuesday</label>
-                    <input class="day" type="checkbox" id="cbox_wedn"><label for="cbox_wend">wednesday</label>
-                    <input class="day" type="checkbox" id="cbox_thur"><label for="cbox_thur">Thursday</label>
-                    <input class="day" type="checkbox" id="cbox_fri"><label for="cbox_friy">Friday</label>
-                    <input class="day" type="checkbox" id="cbox_sat"><label for="cbox_sat">Saturday</label>
-                    <input class="day" type="checkbox" id="cbox_sun"><label for="cbox_sun">Sunday</label>
+                    <input class="day" data-day="M" type="checkbox" id="cbox_Mon" readonly><label for="cbox_Mon">Monday</label>
+                    <input class="day" data-day="TU" type="checkbox" id="cbox_tues" readonly><label for="cbox_tues">Tuesday</label>
+                    <input class="day" data-day="W" type="checkbox" id="cbox_wedn" readonly><label for="cbox_wend">Wednesday</label>
+                    <input class="day" data-day="TH" type="checkbox" id="cbox_thur" readonly><label for="cbox_thur">Thursday</label>
+                    <input class="day" data-day="F" type="checkbox" id="cbox_fri" readonly><label for="cbox_friy">Friday</label>
+                    <input class="day" data-day="S" type="checkbox" id="cbox_sat" readonly><label for="cbox_sat">Saturday</label>
+                    <input class="day" data-day="SU" type="checkbox" id="cbox_sun" readonly><label for="cbox_sun">Sunday</label>
                 </div>
             </section>
         </form> 
         <footer>
-            <a id="cancel" href="/project_1/html/dashboard.html">Cancel</a>
-            <button id="save">Save</button>
         </footer>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/project_1/javaScript/see_ride.js"></script>
     
     
 </body>

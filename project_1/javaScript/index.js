@@ -9,7 +9,7 @@ $("#but_find").click(()=>{
             row+="<td>"+current_ride["user"]+"</td>";
             row+="<td>"+current_ride["from"]+"</td>";
             row+="<td>"+current_ride["to"]+"</td>";
-            row+="<td>"+"View"+"</td>";
+            row+="<td>"+"<a href="+"/project_1/html/see_ride.html?userName="+current_ride["user"]+"?rideName="+current_ride["name"]+">View</a>"+"</td>";
             row+="</tr>"
             rows+=row;
         }
