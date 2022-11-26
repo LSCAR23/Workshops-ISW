@@ -1,4 +1,8 @@
 $("#but_find").click(()=>{
+    find_ride();
+});
+
+function find_ride(){
     let rows="";
     let aux=localStorage.getItem("rides");
     const rides=JSON.parse(aux);
@@ -16,8 +20,7 @@ $("#but_find").click(()=>{
     }
     $("#table_rides tr").remove();
     $("#table_rides").append(rows);
-});
-
+}
 
 function add_localstorage(){
     if(localStorage.length==0){
@@ -59,4 +62,5 @@ fill_select("to","#to",false);
 $(document).on('change', '#from', function(event) {
     fill_select("to","#to",false);
 });
+find_ride();
 

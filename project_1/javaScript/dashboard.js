@@ -33,13 +33,15 @@ function set_links(name){
 }
 
 function delete_ride(ride_name){
-    let bd_rides=JSON.parse(localStorage.getItem("rides"));
-    for (let index = 0; index < bd_rides.length; index++) {
-        const current_ride = bd_rides[index];
-        if(current_ride["name"]==ride_name){
-            bd_rides.splice(index,1);
-            localStorage.setItem("rides",JSON.stringify(bd_rides));
-            break;
+    if(confirm("Esta seguro que desea eliminar el ride "+ride_name+"?")){
+        let bd_rides=JSON.parse(localStorage.getItem("rides"));
+        for (let index = 0; index < bd_rides.length; index++) {
+            const current_ride = bd_rides[index];
+            if(current_ride["name"]==ride_name){
+                bd_rides.splice(index,1);
+                localStorage.setItem("rides",JSON.stringify(bd_rides));
+                break;
+            }
         }
     }
 } 
