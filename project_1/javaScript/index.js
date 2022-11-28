@@ -26,7 +26,7 @@ function add_localstorage(){
     if(localStorage.length==0){
         var aux_2=[{"name":"Oscar","lastName":"Lara","phone":"83105790","nombreUsu":"10scar","contra":"123"}];
         localStorage.setItem("usuarios",JSON.stringify(aux_2));
-        var aux_1=[{"user":"10scar","name":"brete","from":"Limon","to":"San Carlos","description":"tacatacatacataca","departure":"12:30","arrival":"13:10","days":"[M,K,W,T]"},{"user":"10scar","name":"bret","from":"Limon","to":"Alajuela"},{"user":"10scar","name":"bre","from":"Guanacaste","to":"San Carlos"},{"user":"10scar","name":"br","from":"Guanacaste","to":"Limon"}];
+        var aux_1=[{"user": "10scar", "name": "Gym", "from": "casa", "to": "gym", "description": "blabalabla", "departure": "08:11","arrival": "08:40","days": ["M", "TU", "W", "TH", "F", "S"]}];
         localStorage.setItem("rides",JSON.stringify(aux_1));
     }
 }

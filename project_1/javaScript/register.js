@@ -27,9 +27,9 @@ $("#but_reg").click(()=>{
                     alert("Verifique el número telefonico");
                 }else{
                     const user={
-                        "nombre":nom,
-                        "apellido":ape,
-                        "telefono":try_cast.toString(),
+                        "name":nom,
+                        "lastName":ape,
+                        "phone":try_cast.toString(),
                         "nombreUsu":nom_usu,
                         "contra":contra
                     };

@@ -9,39 +9,53 @@
 </head>
 <body>
     <header id="main_head">
-        <a href="/project_1/html/login.html"><img id="back" src="/project_1/imagenes/back.png" alt="back"></a>
+        <a href="/project_1/html/login.html" id="but_back"><img id="back" src="/project_1/imagenes/back.png" alt="back"></a>
     </header>
     <img id="tico_r" src="/project_1/imagenes/ticorides.png" alt="Tico Rides">
     <div>
         <h1>Settings</h1>
     </div>
     <div>
-        <h5>Welcome barrollo</h5>
+        <h5 id="welcome">Welcome barrollo</h5>
     </div>
     <div id="but_content">
-        <a href="/project_1/html/dashboard.html"><button class="tabs">Dashboard</button></a>
-        <a href="/project_1/html/see_ride.html"><button class="tabs">Rides</button></a>
+        <a href="/project_1/html/dashboard.html" id="but_dash"><button class="tabs">Dashboard</button></a>
+        <a href="/project_1/html/see_ride.html" id="but_rid"><button class="tabs">Rides</button></a>
         <button id="but_selected">Settings</button>
     </div>
     <div>
         <form action="">
             <div>
-                <h3>Full name</h3>
-                <input type="text">
+                <h3>First name</h3>
+                <input id="first_name" type="text" required>
             </div>
             <div>
-                <h3>Speed average</h3>
-                <input type="number">
+                <h3>Last name</h3>
+                <input id="last_name" type="text" required>
             </div>
             <div>
-                <h3>About me</h3>
-                <textarea></textarea>
+                <h3>Phone</h3>
+                <input id="telefono" type="tel" required>
+            </div>
+            <div>
+                <h3>Username</h3>
+                <input id="nickname" type="text" required>
+            </div>
+            <div>
+                <h3>Password</h3>
+                <input id="password" type="password" required>
+            </div>
+            <div>
+                <h3>Repeat password</h3>
+                <input id="confirm_password" type="password" required>
             </div>
         </form>
         <footer>
             <a id="cancel" href="/project_1/html/dashboard.html">Cancel</a>
-            <button>Save</button>
+            <button id="but_reg">Save</button>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="/project_1/javaScript/settings.js"></script>
 </body>
 </html>

@@ -64,7 +64,7 @@ $("#save").click(()=>{
     }else{
         if(verificar_time()){
             const new_ride={
-                "user":substract_name(),
+                "user":substract_name()[0],
                 "name":name,
                 "from":start,
                 "to":end,
@@ -74,8 +74,7 @@ $("#save").click(()=>{
                 "days":fill_days()
             }
             delete_ride();
-            const aux_db=localStorage.getItem("rides");
-            const aux_db2=JSON.parse(aux_db);
+            const aux_db2=delete_ride();
             let val=false;
             for (let index = 0; index < aux_db2.length; index++) {
                 if(aux_db2[index]["name"]==name){
@@ -87,19 +86,6 @@ $("#save").click(()=>{
             }else{
                 aux_db2.push(new_ride);
                 localStorage.setItem("rides",JSON.stringify(aux_db2));
-                $("#name").val("");
-                $("#from").val("");
-                $("#end").val("");
-                $("#in_des").val("");
-                $("#departure").val("");
-                $("#arrival").val("");
-                $("#cbox_Mon").prop("checked",false);
-                $("#cbox_tues").prop("checked",false);
-                $("#cbox_wedn").prop("checked",false);
-                $("#cbox_thur").prop("checked",false);
-                $("#cbox_fri").prop("checked",false);
-                $("#cbox_sat").prop("checked",false);
-                $("#cbox_sun").prop("checked",false);
                 alert("Los datos se han actualizado correctamente");
             }
             
@@ -156,10 +142,10 @@ function delete_ride(){
         const current_ride = bd_rides[index];
         if(current_ride["name"]==ride_name){
             bd_rides.splice(index,1);
-            localStorage.setItem("rides",JSON.stringify(bd_rides));
             break;
         }
     }
+    return bd_rides;
 }   
 
 $("#welcome").html("<h5>Welcome "+substract_name()[0]+"</h5");

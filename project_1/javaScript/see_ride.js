@@ -77,6 +77,6 @@ function fill_days(){
     }
     return days;
 }
-$("#welcome").html("<h5>Welcome "+substract_name()[0]+"</h5");
+$("#welcome").html("<h5>Owner: "+substract_name()[0]+"</h5");
 $("#back_b").attr("href","/project_1/html/index.html?userName="+substract_name()[0]);
 fill_spaces();
