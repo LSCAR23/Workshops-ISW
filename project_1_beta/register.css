@@ -1,0 +1,43 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+header{
+    display: flex;
+    background-color: #246355;
+    align-items: center;
+    padding: 10px;
+}
+#tico_r{
+    width:200px ;
+    height:auto;
+    text-align: center;
+}
+#back{
+    width:50px;
+    height:auto;
+}
+
+input{
+    height: 1rem;
+    font-size: 15px;
+}
+footer{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+button{
+    margin-top: 20px;
+    background-color: #0f362d;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+    height: 30px; 
+}
+button:hover{
+    background-color: #369681;
+    color: #fff;
+}
+

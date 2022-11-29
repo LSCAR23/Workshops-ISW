@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="poli.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="main_head">
+        <a href="dashboard.html"><img id="back" src="back.png" alt="back"></a>
+    </header>
+    <img id="tico_r" src="ticorides.png" alt="Tico Rides">
+    <div>
+        <h1>Edit ride</h1>
+    </div>
+    <div>
+        <h5>Welcome barrollo</h5>
+    </div>
+    <div id="but_content">
+        <a href="dashboard.html"><button class="tabs">Dashboard</button></a>
+        <button id="but_selected">Rides</button>
+        <a href="settings.html"><button class="tabs">Settings</button></a>
+    </div>
+    <div>
+        <form action="">
+            <section>
+                <div>
+                    <h3>Ride name</h3>
+                    <input type="text">
+                </div>
+                <div class="child_inf">
+                    <div class="child_child">
+                        <h3>Start From</h3>
+                        <input type="text">
+                    </div>
+                    <div class="child_child">
+                        <h3>End</h3>
+                        <input type="text">
+                    </div>
+                </div>
+                <div>
+                    <h3>Description</h3>
+                    <textarea id="in_des" ></textarea>
+                </div>
+            </section>
+            <section id="secc_time">
+                <div id="time">
+                    <div>
+                        <h3>Departure</h3>
+                        <input type="time">
+                    </div>
+                    <div>
+                        <h3>Estimated Arrival</h3>
+                        <input type="time">
+                    </div>
+                </div>
+                <div id="days">
+                    <h3>Select days</h3>
+                    <input class="day" type="checkbox" id="cbox_Mon"><label for="cbox_Mon">Monday</label>
+                    <input class="day" type="checkbox" id="cbox_tues"><label for="cbox_tues">Tuesday</label>
+                    <input class="day" type="checkbox" id="cbox_wedn"><label for="cbox_wend">wednesday</label>
+                    <input class="day" type="checkbox" id="cbox_thur"><label for="cbox_thur">Thursday</label>
+                    <input class="day" type="checkbox" id="cbox_fri"><label for="cbox_friy">Friday</label>
+                    <input class="day" type="checkbox" id="cbox_sat"><label for="cbox_sat">Saturday</label>
+                    <input class="day" type="checkbox" id="cbox_sun"><label for="cbox_sun">Sunday</label>
+                </div>
+            </section>
+        </form> 
+        <footer>
+            <a id="cancel" href="dashboard.html">Cancel</a>
+            <button id="save">Save</button>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
